@@ -1,0 +1,28 @@
+#social-networks {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+#social-networks p {
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+#social-networks p a {
+    color: #fff;
+}
+
+#social-networks p a i {
+    padding: 10px;
+    margin-right: 15px;
+    border: 2px solid transparent;
+    transition: background 500ms ease-out;
+    border-radius: 50%;
+}
+
+#social-networks p a:hover i {
+    color: #fff;
+    background: #D9B956;
+}
