@@ -1,4 +1,4 @@
-#content {
+#content, #skills {
     position: absolute;
     left: 0;
     top: 0;
@@ -8,7 +8,7 @@
     padding: 15px;
 }
 
-#content .grid {
+.grid {
     margin: auto;
 }
 
@@ -44,6 +44,85 @@
     font-size: 1.6rem;
 }
 
+/* SKILLS */
+
+#skills {
+    display: none;
+}
+
+.skills-categories {
+    display: flex;
+}
+
+.category {
+    margin-top: 75px;
+    margin-bottom: 75px;
+    display: flex;
+}
+
+.category-title {
+    font-size: 2.5rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.hexagon {
+    position: relative;
+    width: 100px;
+    height: 57.74px;
+    background-color: #d9b956;
+    margin: 28.87px 0;
+    font-size: 2.5rem;
+    display: flex;
+}
+
+.hexagon:before,
+.hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.hexagon:before {
+    bottom: 100%;
+    border-bottom: 28.87px solid #d9b956;
+}
+
+.hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 28.87px solid #d9b956;
+}
+
+.skills-languages {
+    display: flex;
+}
+
+.skills-languages .language {
+    border-radius: .25rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.skills-languages .language:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 1);
+}
+
+.skills-languages .language img {
+    max-width: 300px;
+}
+
+.language-logo-mobile {
+    display: none;
+}
+
 @media (max-width: 992px) {
     #content .grid {
         display: block !important;
@@ -65,5 +144,66 @@
     #content .text .subtitle {
         font-size: 1.3rem;
         text-align: center;
+    }
+}
+
+@media (max-width: 740px) {
+    .language-logo-mobile {
+        display: block;
+    }
+
+    .language-logo {
+        display: none;
+    }
+
+    .category {
+        margin-top: 35px;
+        margin-bottom: 35px;
+        display: block;
+    }
+
+    .category-title {
+        font-size: 1.5rem;
+        margin: 0;
+        text-align: center;
+    }
+
+    .hexagon {
+        position: relative;
+        width: 70px;
+        height: 40.41px;
+        background-color: #d9b956;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 2rem;
+        display: flex;
+    }
+
+    .hexagon:before,
+    .hexagon:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        border-left: 35px solid transparent;
+        border-right: 35px solid transparent;
+    }
+
+    .hexagon:before {
+        bottom: 100%;
+        border-bottom: 20.21px solid #d9b956;
+    }
+
+    .hexagon:after {
+        top: 100%;
+        width: 0;
+        border-top: 20.21px solid #d9b956;
+    }
+
+    .skills-categories, .skills-languages {
+        margin-top: 50px;
+    }
+
+    .skills-languages .language img {
+        max-width: 60px;
     }
 }

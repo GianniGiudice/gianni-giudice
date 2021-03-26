@@ -23,6 +23,25 @@
     <body>
         <div id="top"></div>
 
+        <div id="menu">
+            <div class="toggler">
+                <i class="fas fa-bars" id="open-nav"></i>
+            </div>
+            <div class="menu-links">
+                <div class="list">
+                    <ul>
+                        <li><a href="#content" id="content-link" class="nav-link"><i class="fas fa-caret-right"></i> Accueil</a></li>
+                        <li><a href="#skills" id="skills-link" class="nav-link"><i class="fas fa-caret-right"></i> Compétences</a></li>
+                        <!--<li><a href="#projects" id="projects-link" class="nav-link"><i class="fas fa-caret-right"></i> Projets</a></li>
+                        <li><a href="#prices" id="prices-link" class="nav-link"><i class="fas fa-caret-right"></i> Tarifs</a></li>-->
+                    </ul>
+                </div>
+                <div class="close-toggler">
+                    <i class="fas fa-times" id="close-nav"></i>
+                </div>
+            </div>
+        </div>
+
         <div id="social-networks">
             <p>
                 <a href="https://github.com/GianniGiudice" target="_blank"><i class="fab fa-github"></i></a>
@@ -31,7 +50,7 @@
                 <a href="mailto:jcalicod@gmail.com"><i class="fas fa-paper-plane"></i></a>
             </p>
         </div>
-        <div id="content">
+        <div id="content" class="page-block">
             <div class="d-flex grid">
                 <div class="profile">
                     <img src="asset/img/avatar.png" alt="Avatar">
@@ -49,7 +68,42 @@
             </div>
         </div>
 
+        <div id="skills" class="page-block">
+            <div class="d-flex grid text-white justify-content-evenly w-100">
+                <div class="skills-categories">
+                    <div class="m-auto">
+                        <div class="category">
+                            <div class="hexagon"><span class="m-auto"><i class="fas fa-mobile-alt"></i></span></div>
+                            <div class="category-title">Adaptatif</div>
+                        </div>
+                        <div class="category">
+                            <div class="hexagon"><span class="m-auto"><i class="far fa-lightbulb"></i></span></div>
+                            <div class="category-title">Intuitif</div>
+                        </div>
+                        <div class="category">
+                            <div class="hexagon"><span class="m-auto"><i class="fas fa-bomb"></i></span></div>
+                            <div class="category-title">Dynamique</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-languages">
+                    <div class="m-auto">
+                        <div class="language" id="symfony">
+                            <img src="asset/img/symfony.png" alt="Symfony" class="language-logo">
+                            <img src="asset/img/symfony-mobile.png" alt="Symfony" class="language-logo-mobile">
+                        </div>
+                        <div class="language" id="react">
+                            <img src="asset/img/react.png" alt="React" class="language-logo">
+                            <img src="asset/img/react-mobile.png" alt="React" class="language-logo-mobile">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <script src="script/jquery.js"></script>
+        <script src="script/nav.js"></script>
+        <script src="script/skills.js"></script>
         <script src="script/fireflies.js"></script>
     </body>
 </html>
