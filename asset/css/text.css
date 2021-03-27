@@ -1,4 +1,4 @@
-#content, #skills {
+#content, #skills, #projects {
     position: absolute;
     left: 0;
     top: 0;
@@ -123,6 +123,76 @@
     display: none;
 }
 
+/* PROJECTS */
+
+#projects {
+    display: none;
+}
+
+#projects .project-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#projects .projects {
+    width: 100%;
+}
+
+#projects .projects .m-auto > div {
+    width: 500px;
+}
+
+#projects .project {
+    height: 200px;
+    border-radius: .25rem;
+    background-size: cover;
+    background-position: top center;
+    margin-top: 15px;
+    display: flex;
+    position: relative;
+    border: 1px solid #ffffff;
+}
+
+#projects .project button {
+    background: #D9B956;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#projects #pd3o {
+    background-image: url('../img/pd3o.png');
+}
+
+#projects #goping {
+    background-image: url('../img/goping.png');
+}
+
+#projects #sellette {
+    background-image: url('../img/sellette.png');
+}
+
+#projects .project button {
+    margin: auto;
+}
+
+#projects .project button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 1700px) {
+    #projects .projects .m-auto > div {
+        width: 400px;
+    }
+}
+
+@media (max-width: 1392px) {
+    #projects .projects .m-auto > div {
+        width: 300px;
+    }
+}
+
 @media (max-width: 992px) {
     #content .grid {
         display: block !important;
@@ -144,6 +214,27 @@
     #content .text .subtitle {
         font-size: 1.3rem;
         text-align: center;
+    }
+
+    #projects .projects > div {
+        display: block !important;
+    }
+
+    #projects .projects > div > div {
+        margin: auto !important;
+    }
+
+    #projects > div {
+        margin-top: 130px;
+    }
+
+    #projects .project-title {
+        font-size: 1.2rem;
+    }
+
+    #projects .project {
+        height: 120px;
+        margin-bottom: 10px;
     }
 }
 
@@ -200,7 +291,7 @@
     }
 
     .skills-categories, .skills-languages {
-        margin-top: 50px;
+        margin-top: 60px;
     }
 
     .skills-languages .language img {
